@@ -1,38 +1,99 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&family=Grape+Nuts&family=Open+Sans:wght@300&display=swap');
+
+*{
+  font-family: 'Fredoka', sans-serif;
+}
+.head{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.anc{
+  text-decoration: none;
+  color:white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+ width: 800px;
+ margin:20px auto;
+  padding: 40px;
+  box-shadow: 2px 3px 10px rgba(0,0,0,0.1),
+              -2px 4px 12px rgba(0,0,0,0.1);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.first_two{
+  display:flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+  width:300px;
+}
+
+.middl{
+  
+ 
+  width:200px;
+  justify-content: space-between;
+}
+
+.m1,.m2{
+  display: flex;
+  padding:5px;
+  align-items: center;
+}
+.name{
+  font-size: 22px;
+  color: grey;
+}
+.bich{
+  display: flex;
+  justify-content: space-between;
+}
+
+.crd{
+  text-align: center;
+  margin: 30px;
+  font-size:40px;
+  color: red;
+  display: flex;
+  min-height: 80vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+}
+.iso2{
+  margin: 0 2px;
+}
+.header{
+  text-align: center;
+  font-size:19px;
+  color: grey;
+  margin: 10px 0;
+}
+@media screen and (max-width:820px){
+  .card{
+    width:600px
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width:540px){
+  .card{
+    width:400px
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width:420px){
+  .card{
+    width:280px
   }
 }
+
+
