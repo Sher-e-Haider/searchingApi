@@ -41,7 +41,7 @@ function Home(props) {
       <div className="header">
         write 'countries' for randomly max 10 datas. <br /> country name for a country 
       </div>
-     { input==='countries'?(
+     { (input==='countries' || input==='Countries')?(
          ran.map((x,i)=>(
        <Card x={x} key={i} />
       ))
